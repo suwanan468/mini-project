@@ -1,7 +1,7 @@
 ﻿Imports System.Data.Common.CommandTrees.ExpressionBuilder
 Imports System.Data.SqlClient
 Public Class Login
-    Dim conn As SqlConnection = New SqlConnection("Data Source=192.168.1.37, 1433;Initial Catalog=mini-projectDB;Integrated Security=True")
+    Dim conn As SqlConnection = New SqlConnection("Data Source=192.168.1.37, 1433;Initial Catalog=mini-projectDB;Persist Security Info=True;User ID=admin;Password=miniproject")
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()
     End Sub
