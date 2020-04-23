@@ -80,10 +80,10 @@
       <DependentUpon>login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menu.Designer.vb">
-      <DependentUpon>menu.vb</DependentUpon>
+    <Compile Include="menuPage.Designer.vb">
+      <DependentUpon>menuPage.vb</DependentUpon>
     </Compile>
-    <Compile Include="menu.vb">
+    <Compile Include="menuPage.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -106,8 +106,8 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menu.resx">
-      <DependentUpon>menu.vb</DependentUpon>
+    <EmbeddedResource Include="menuPage.resx">
+      <DependentUpon>menuPage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

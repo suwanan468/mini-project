@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class menu
+Partial Class menuPage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -32,8 +32,8 @@ Partial Class menu
         '
         'btnEmp
         '
-        Me.btnEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btnEmp.Location = New System.Drawing.Point(83, 31)
+        Me.btnEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btnEmp.Location = New System.Drawing.Point(90, 35)
         Me.btnEmp.Name = "btnEmp"
         Me.btnEmp.Size = New System.Drawing.Size(195, 52)
         Me.btnEmp.TabIndex = 0
@@ -42,8 +42,8 @@ Partial Class menu
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button2.Location = New System.Drawing.Point(83, 109)
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button2.Location = New System.Drawing.Point(90, 113)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(195, 52)
         Me.Button2.TabIndex = 1
@@ -52,8 +52,8 @@ Partial Class menu
         '
         'Button3
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button3.Location = New System.Drawing.Point(83, 182)
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button3.Location = New System.Drawing.Point(90, 186)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(195, 52)
         Me.Button3.TabIndex = 2
@@ -62,8 +62,8 @@ Partial Class menu
         '
         'Button4
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Button4.Location = New System.Drawing.Point(83, 259)
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Button4.Location = New System.Drawing.Point(90, 263)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(195, 52)
         Me.Button4.TabIndex = 3
@@ -72,8 +72,8 @@ Partial Class menu
         '
         'btnReport
         '
-        Me.btnReport.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btnReport.Location = New System.Drawing.Point(83, 339)
+        Me.btnReport.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btnReport.Location = New System.Drawing.Point(90, 343)
         Me.btnReport.Name = "btnReport"
         Me.btnReport.Size = New System.Drawing.Size(195, 52)
         Me.btnReport.TabIndex = 4
@@ -90,7 +90,7 @@ Partial Class menu
         Me.btnExit2.Text = "Exit"
         Me.btnExit2.UseVisualStyleBackColor = True
         '
-        'menu
+        'menuPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -103,7 +103,7 @@ Partial Class menu
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnEmp)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "menu"
+        Me.Name = "menuPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "menu"
         Me.ResumeLayout(False)
