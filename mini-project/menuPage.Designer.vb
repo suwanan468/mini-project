@@ -27,7 +27,7 @@ Partial Class menuPage
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnReport = New System.Windows.Forms.Button()
-        Me.btnExit2 = New System.Windows.Forms.Button()
+        Me.btnLogout = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnEmp
@@ -80,15 +80,15 @@ Partial Class menuPage
         Me.btnReport.Text = "Report"
         Me.btnReport.UseVisualStyleBackColor = True
         '
-        'btnExit2
+        'btnLogout
         '
-        Me.btnExit2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btnExit2.Location = New System.Drawing.Point(119, 428)
-        Me.btnExit2.Name = "btnExit2"
-        Me.btnExit2.Size = New System.Drawing.Size(121, 36)
-        Me.btnExit2.TabIndex = 5
-        Me.btnExit2.Text = "Exit"
-        Me.btnExit2.UseVisualStyleBackColor = True
+        Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btnLogout.Location = New System.Drawing.Point(119, 428)
+        Me.btnLogout.Name = "btnLogout"
+        Me.btnLogout.Size = New System.Drawing.Size(121, 36)
+        Me.btnLogout.TabIndex = 5
+        Me.btnLogout.Text = "Logout"
+        Me.btnLogout.UseVisualStyleBackColor = True
         '
         'menuPage
         '
@@ -96,7 +96,7 @@ Partial Class menuPage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.ClientSize = New System.Drawing.Size(370, 484)
-        Me.Controls.Add(Me.btnExit2)
+        Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnReport)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -115,5 +115,5 @@ Partial Class menuPage
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents btnReport As Button
-    Friend WithEvents btnExit2 As Button
+    Friend WithEvents btnLogout As Button
 End Class

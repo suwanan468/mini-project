@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class empPage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class empPage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnClose = New System.Windows.Forms.Button()
@@ -47,10 +47,10 @@ Partial Class empPage
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dataEmp = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.inputSalary, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dataEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -146,6 +146,7 @@ Partial Class empPage
         '
         Me.inputTel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inputTel.Location = New System.Drawing.Point(152, 355)
+        Me.inputTel.MaxLength = 10
         Me.inputTel.Name = "inputTel"
         Me.inputTel.Size = New System.Drawing.Size(243, 22)
         Me.inputTel.TabIndex = 20
@@ -185,6 +186,7 @@ Partial Class empPage
         '
         Me.inputAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inputAddress.Location = New System.Drawing.Point(152, 238)
+        Me.inputAddress.MaxLength = 255
         Me.inputAddress.Multiline = True
         Me.inputAddress.Name = "inputAddress"
         Me.inputAddress.Size = New System.Drawing.Size(243, 62)
@@ -216,6 +218,7 @@ Partial Class empPage
         '
         Me.inputLname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inputLname.Location = New System.Drawing.Point(152, 193)
+        Me.inputLname.MaxLength = 50
         Me.inputLname.Name = "inputLname"
         Me.inputLname.Size = New System.Drawing.Size(243, 22)
         Me.inputLname.TabIndex = 17
@@ -235,6 +238,7 @@ Partial Class empPage
         '
         Me.inputFname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inputFname.Location = New System.Drawing.Point(152, 152)
+        Me.inputFname.MaxLength = 50
         Me.inputFname.Name = "inputFname"
         Me.inputFname.Size = New System.Drawing.Size(243, 22)
         Me.inputFname.TabIndex = 16
@@ -243,6 +247,7 @@ Partial Class empPage
         '
         Me.inputPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inputPass.Location = New System.Drawing.Point(153, 113)
+        Me.inputPass.MaxLength = 20
         Me.inputPass.Name = "inputPass"
         Me.inputPass.Size = New System.Drawing.Size(242, 22)
         Me.inputPass.TabIndex = 15
@@ -251,6 +256,7 @@ Partial Class empPage
         '
         Me.inputUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inputUser.Location = New System.Drawing.Point(153, 71)
+        Me.inputUser.MaxLength = 20
         Me.inputUser.Name = "inputUser"
         Me.inputUser.Size = New System.Drawing.Size(242, 22)
         Me.inputUser.TabIndex = 14
@@ -321,13 +327,13 @@ Partial Class empPage
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Username"
         '
-        'DataGridView1
+        'dataEmp
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(452, 13)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(789, 539)
-        Me.DataGridView1.TabIndex = 1
+        Me.dataEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dataEmp.Location = New System.Drawing.Point(452, 13)
+        Me.dataEmp.Name = "dataEmp"
+        Me.dataEmp.Size = New System.Drawing.Size(789, 539)
+        Me.dataEmp.TabIndex = 1
         '
         'empPage
         '
@@ -335,7 +341,7 @@ Partial Class empPage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.ClientSize = New System.Drawing.Size(1253, 564)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dataEmp)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "empPage"
@@ -344,7 +350,7 @@ Partial Class empPage
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.inputSalary, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dataEmp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -373,6 +379,6 @@ Partial Class empPage
     Friend WithEvents inputFname As TextBox
     Friend WithEvents inputPass As TextBox
     Friend WithEvents inputUser As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dataEmp As DataGridView
     Friend WithEvents btnClose As Button
 End Class
