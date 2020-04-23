@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class empPage
-    Dim conn As SqlConnection = New SqlConnection("Data Source=NNOTTP\SQLEXPRESS;Initial Catalog=mini-projectDB;Integrated Security=True")
+    Dim conn As SqlConnection = New SqlConnection("Data Source=192.168.1.37, 1433;Initial Catalog=mini-projectDB;Integrated Security=True")
     Private Sub empPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         getPosition()
         getDataEmp()
