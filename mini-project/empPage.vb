@@ -7,11 +7,16 @@ Public Class empPage
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        ClearInput()
         Me.Hide()
         menuPage.Show()
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ClearInput()
+    End Sub
+
+    Public Sub ClearInput()
         inputUser.Clear()
         inputPass.Clear()
         inputFname.Clear()
@@ -69,18 +74,9 @@ Public Class empPage
 
         conn.Open()
         If cmd.ExecuteNonQuery() Then
-            MessageBox.Show("Add data complete")
-
-            inputUser.Clear()
-            inputPass.Clear()
-            inputFname.Clear()
-            inputLname.Clear()
-            inputAddress.Clear()
-            inputGender.ResetText()
-            inputTel.Clear()
-            inputPosition.ResetText()
-            inputSalary.Value = 0
+            ClearInput()
             getDataEmp()
+            MessageBox.Show("Add data complete")
         End If
         conn.Close()
 
@@ -117,19 +113,9 @@ Public Class empPage
 
         conn.Open()
         If cmd.ExecuteNonQuery() Then
-            MessageBox.Show("Delete data complete")
-
-            inputUser.Clear()
-            inputPass.Clear()
-            inputFname.Clear()
-            inputLname.Clear()
-            inputAddress.Clear()
-            inputGender.ResetText()
-            inputTel.Clear()
-            inputPosition.ResetText()
-            inputSalary.Value = 0
-
+            ClearInput()
             getDataEmp()
+            MessageBox.Show("Delete data complete")
         End If
         conn.Close()
     End Sub
@@ -156,19 +142,9 @@ Public Class empPage
 
         conn.Open()
         If cmd.ExecuteNonQuery() Then
-            MessageBox.Show("Edit data complete")
-
-            inputUser.Clear()
-            inputPass.Clear()
-            inputFname.Clear()
-            inputLname.Clear()
-            inputAddress.Clear()
-            inputGender.ResetText()
-            inputTel.Clear()
-            inputPosition.ResetText()
-            inputSalary.Value = 0
-
+            ClearInput()
             getDataEmp()
+            MessageBox.Show("Edit data complete")
         End If
         conn.Close()
     End Sub

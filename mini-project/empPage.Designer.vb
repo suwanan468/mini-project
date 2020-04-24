@@ -86,10 +86,12 @@ Partial Class empPage
         '
         'btnClose
         '
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.btnClose.Location = New System.Drawing.Point(11, 12)
+        Me.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnClose.Location = New System.Drawing.Point(0, 0)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(68, 28)
+        Me.btnClose.Size = New System.Drawing.Size(52, 28)
         Me.btnClose.TabIndex = 23
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
